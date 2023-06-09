@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 700px;
+    width: 100%;
+}
+
+/* Inicio Nav bar */
+
+header {
+    background-color: rgb(0, 173, 0);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    font-size: 1.5em;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:768px) {
+
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: rgb(0, 207, 0);
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+/* Fim Nav bar */
+
+/* Container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.container p {
+    font-size: 1.4em;
+    margin: 15px 5 15px 5;
+}
+
+.container img {
+    align-self: center;
+    height: 300px;
+    width: 500px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(0, 207, 0);
+    color: white;
+}
+
+/* Responsividade */
+
+@media (max-width:768px) {
+
+    .container {
+        height: auto;
+    }
+
+    .container p {
+        margin-top: 10px;
+        padding: 8px;
+    }
+
+    .container img {
+        height: 150px;
+        width: 250px;
+    }
+
+}

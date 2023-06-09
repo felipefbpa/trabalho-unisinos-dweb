@@ -143,10 +143,6 @@ a {
     margin-top: 5px;
 }
 
-.saibaMais {
-    margin: 10px;
-}
-
 form {
     margin-top: 20px;
 }
@@ -166,6 +162,22 @@ input {
     width: 300px;
 }
 
+button {
+    background-color: rgb(0, 207, 0);
+    border: solid 1px black;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 7px;
+    text-align: center;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 207, 0);
+}
+
 .contato {
     margin: 10px;
 }
@@ -177,6 +189,8 @@ input {
 .contato b {
     color: rgb(0, 207, 0);
 }
+
+/* Final do conteudo da esquerda */
 
 /* Barra lateral */
 
@@ -223,12 +237,15 @@ input {
     color: white;
 }
 
+/* Fim barra lateral */
+
 /* footer */
 
 footer {
     padding: 10px;
     text-align: center;
     background-color: rgb(0, 207, 0);
+    color: white;
 }
 
 /* Responsividade */
@@ -258,7 +275,8 @@ footer {
         margin: 0;
     }
 
-    .container h1, p {
+    .container h1,
+    p {
         text-align: center;
     }
 
